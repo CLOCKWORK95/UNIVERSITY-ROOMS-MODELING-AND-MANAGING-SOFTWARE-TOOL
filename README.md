@@ -1,5 +1,10 @@
 # UNIVERSITY-ROOMS-MODELING-AND-MANAGING-SOFTWARE-TOOL
 
+Questo lavoro è parte di un progetto più ampio per la realizzazione di un sistema informatico di gestione di un'Università.
+La parte in oggetto è relativa alla “Gestione dell'edilizia”, ed è comprensivo dei 
+casi d’uso volti alla creazione, gestione ed eliminazione di strutture edili ed equipaggiamenti di 
+interesse per un’Università.
+
 L’architettura del software è basata sul pattern architetturale BCE (Boundary-Control-Entity), 
 moderna evoluzione del tipico pattern architetturale MVC. Secondo BCE è opportuno mantenere 
 strettamente separati blocchi di software destinati a funzionalità di Boundary (confine utente-macchina), di Controllo (corpo centrale/logica del codice), e di modellizzazione, come le entità. Questa 
