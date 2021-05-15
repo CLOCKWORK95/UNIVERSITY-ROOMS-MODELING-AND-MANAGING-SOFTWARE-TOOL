@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.ModificaStanzeController">
+   <children>
+      <Button fx:id="btnBack" layoutX="730.0" layoutY="41.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="81.0" text="Back" />
+      <Label fx:id="lblModificaStanza" layoutX="46.0" layoutY="41.0" prefHeight="30.0" prefWidth="257.0" text="Modifica Stanze" textFill="#2b1dc9">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="37.0" layoutY="161.0" prefHeight="200.0" prefWidth="376.0">
+        <columns>
+          <TableColumn fx:id="tableColumn1" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="tableColumn2" prefWidth="75.0" text="RoomGroup" />
+            <TableColumn fx:id="tableColumn3" prefWidth="75.0" text="Edificio" />
+            <TableColumn fx:id="tableColumn4" prefWidth="75.0" text="Macroarea" />
+            <TableColumn fx:id="tableColumn5" prefWidth="75.0" text="CS" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table_FOR" layoutX="471.0" layoutY="161.0" prefHeight="200.0" prefWidth="376.0">
+         <columns>
+            <TableColumn fx:id="table_FORColumn1" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="table_FORColumn2" prefWidth="75.0" text="Descrizione" />
+            <TableColumn fx:id="table_FORColumn3" prefWidth="75.0" text="N°" />
+            <TableColumn fx:id="table_FORColumn4" prefWidth="75.0" text="N° Guasti" />
+            <TableColumn fx:id="table_FORColumn5" prefWidth="75.0" text="CC" />
+         </columns>
+      </TableView>
+      <TableView fx:id="table_F" layoutX="77.0" layoutY="456.0" prefHeight="309.0" prefWidth="226.0">
+         <columns>
+            <TableColumn fx:id="table_FColumn1" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="table_FColumn2" prefWidth="75.0" text="Descrizione" />
+            <TableColumn fx:id="table_FColumn3" prefWidth="75.0" text="CC" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtInsertCREATEnumberOfInst" layoutX="585.0" layoutY="546.0" prefHeight="25.0" prefWidth="68.0" />
+      <TextField fx:id="txtInsertDELETEnumberOfInst" layoutX="585.0" layoutY="659.0" prefHeight="25.0" prefWidth="68.0" />
+      <Button fx:id="btnViewFeatures" layoutX="286.0" layoutY="412.0" mnemonicParsing="false" onAction="#printFeaturesOnTable_F" text="View" />
+      <Button fx:id="btnAdd" layoutX="698.0" layoutY="546.0" mnemonicParsing="false" onAction="#addFeaturetoRoom" prefHeight="25.0" prefWidth="59.0" text="Add" />
+      <Button layoutX="698.0" layoutY="659.0" mnemonicParsing="false" onAction="#removeFeatureFromRoom" text="Remove" />
+      <Button fx:id="btnViewFOR" layoutX="785.0" layoutY="123.0" mnemonicParsing="false" onAction="#printFOROnTable_FOR" text="View" />
+      <Button fx:id="btnViewRooms" layoutX="303.0" layoutY="123.0" mnemonicParsing="false" onAction="#printRoomsOnTable" text="View All Rooms" />
+      <Label fx:id="lblInsertCREATEnumberOfInst" layoutX="514.0" layoutY="549.0" text="N°">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertDELETEnumberOfInst" layoutX="514.0" layoutY="662.0" text="N°">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="493.0" text="Inserisci Caratteristica nella Stanza selezionata">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="610.0" text="Rimuovi Caratteristica dalla Stanza selezionata">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblViewfeatures" layoutX="37.0" layoutY="415.0" text="Visualizza le Caratteristiche disponibili">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblViewRooms" layoutX="46.0" layoutY="126.0" text="Selezione Stanza">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblViewRoom" layoutX="514.0" layoutY="126.0" text="Visualizza le Caratteristiche della Stanza">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNext" layoutX="588.0" layoutY="733.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="59.0" text="Next" />
+   </children>
+</AnchorPane>

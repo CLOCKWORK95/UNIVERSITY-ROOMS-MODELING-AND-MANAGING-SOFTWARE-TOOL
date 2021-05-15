@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.CreazioneModelloController">
+   <children>
+      <Label fx:id="lblCreazioneModello" layoutX="30.0" layoutY="28.0" prefHeight="35.0" prefWidth="171.0" text="Creazione Modello" textFill="#1a46d7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="179.0" layoutY="206.0" prefHeight="25.0" prefWidth="102.0" />
+      <Label fx:id="lblName" layoutX="37.0" layoutY="210.0" prefHeight="17.0" prefWidth="142.0" text="Insert Name :" />
+      <Label fx:id="lblRoomGroup" layoutX="193.0" layoutY="318.0" prefHeight="17.0" prefWidth="89.0" text="RoomGroup " />
+      <Button fx:id="btnBack" layoutX="695.0" layoutY="33.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="52.0" text="Back" />
+      <Button fx:id="btnCreate" layoutX="125.0" layoutY="478.0" mnemonicParsing="false" onAction="#creazioneModelloVuoto" prefHeight="25.0" prefWidth="82.0" text="Create" />
+      <Label fx:id="lblClickToView" layoutX="355.0" layoutY="123.0" prefHeight="17.0" prefWidth="96.0" text="Click to View :" />
+      <Button fx:id="btnView" layoutX="467.0" layoutY="119.0" mnemonicParsing="false" onAction="#printModelsOnTable_F" text="View" />
+      <MenuButton fx:id="menuButtonRoomGroup" layoutX="37.0" layoutY="314.0" mnemonicParsing="false" text="RoomGroup">
+        <items>
+          <MenuItem fx:id="miClassroom" mnemonicParsing="false" onAction="#setLabelRoomGroupClassrom" text="Classroom" />
+          <MenuItem fx:id="miLaboratory" mnemonicParsing="false" onAction="#setLabelRoomGroupLaboratory" text="Laboratory" />
+            <MenuItem fx:id="miConferenceRoom" mnemonicParsing="false" onAction="#setLabelRoomGroupConference" text="ConferenceRoom" />
+        </items>
+      </MenuButton>
+      <Button fx:id="btnNext" layoutX="701.0" layoutY="535.0" mnemonicParsing="false" onAction="#next" text="Next" />
+      <TableView fx:id="table_F" layoutX="415.0" layoutY="171.0" prefHeight="285.0" prefWidth="216.0">
+        <columns>
+          <TableColumn fx:id="table_FColumn1" prefWidth="72.0" text="Nome" />
+          <TableColumn fx:id="table_FColumn2" prefWidth="78.0" text="Roomgroup" />
+            <TableColumn fx:id="table_FColumn3" prefWidth="65.0" text="CM" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

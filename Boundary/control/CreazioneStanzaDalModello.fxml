@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.CreazioneStanzaDalModelloController">
+   <children>
+      <Button fx:id="btnBack" layoutX="730.0" layoutY="41.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="81.0" text="Back" />
+      <Label fx:id="lblCreazioneStanzaDaModello" layoutX="46.0" layoutY="41.0" prefHeight="30.0" prefWidth="257.0" text="Creazione Stanza Da Modello" textFill="#2b1dc9">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_FOM" layoutX="77.0" layoutY="151.0" prefHeight="200.0" prefWidth="302.0">
+         <columns>
+            <TableColumn fx:id="table_FOMColumn1" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="table_FOMColumn2" prefWidth="75.0" text="Descrizione" />
+            <TableColumn fx:id="table_FOMColumn3" prefWidth="75.0" text="N°" />
+            <TableColumn fx:id="table_FOMColumn4" prefWidth="75.0" text="CC" />
+         </columns>
+      </TableView>
+      <TableView fx:id="table" layoutX="77.0" layoutY="444.0" prefHeight="250.0" prefWidth="375.0">
+         <columns>
+            <TableColumn fx:id="tableColumn1" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="tableColumn2" prefWidth="75.0" text="RoomGroup" />
+            <TableColumn fx:id="tableColumn3" prefWidth="75.0" text="Edificio" />
+            <TableColumn fx:id="tableColumn4" prefWidth="75.0" text="Macroarea" />
+            <TableColumn fx:id="tableColumn5" prefWidth="75.0" text="CS" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnViewRooms" layoutX="337.0" layoutY="401.0" mnemonicParsing="false" onAction="#printRoomsOnTable" text="View" />
+      <Button fx:id="btnViewFOR" layoutX="349.0" layoutY="114.0" mnemonicParsing="false" onAction="#printFOMOnTable_FOM" text="View" />
+      <Label fx:id="lblViewRooms" layoutX="51.0" layoutY="403.0" text="Visualizza Stanze">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblViewFOM" layoutX="83.0" layoutY="116.0" text="Visualizza le Caratteristiche del Modello">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtInsertName" layoutX="622.0" layoutY="226.0" />
+      <Label fx:id="lblInsertName" layoutX="480.0" layoutY="230.0" text="Inserisci Nome Stanza:" />
+      <Button fx:id="btnCreate" layoutX="611.0" layoutY="639.0" mnemonicParsing="false" onAction="#createRoomFromModel" text="Create">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table_E" layoutX="509.0" layoutY="446.0" prefHeight="137.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="table_EColumn1" prefWidth="118.0" text="Nome" />
+          <TableColumn fx:id="table_EColumn2" prefWidth="120.0" text="Macroarea" />
+            <TableColumn fx:id="table_EColumn3" prefWidth="63.0" text="CE" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnViewBuildings" layoutX="725.0" layoutY="413.0" mnemonicParsing="false" onAction="#printBuildingsOnTable_E" text="View" />
+      <Label fx:id="lblSelect" layoutX="593.0" layoutY="417.0" text="Seleziona Edificio :" />
+      <Button fx:id="btnCreate1" layoutX="748.0" layoutY="694.0" mnemonicParsing="false" onAction="#fine" text="Fine">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.GestioneCaratteristicheController">
+   <children>
+      <Button fx:id="btnBack" layoutX="576.0" layoutY="49.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="81.0" text="Back" />
+      <Label fx:id="lblGestioneCaratteristiche" layoutX="46.0" layoutY="41.0" prefHeight="30.0" prefWidth="257.0" text="Gestione Caratteristiche" textFill="#2b1dc9">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreazioneCaratteristiche" layoutX="60.0" layoutY="139.0" mnemonicParsing="false" onAction="#creazioneCaratteristiche" prefHeight="37.0" prefWidth="197.0" text="Creazione Caratteristiche" />
+      <Button fx:id="btnEliminazioneCaratteristiche" layoutX="60.0" layoutY="229.0" mnemonicParsing="false" onAction="#eliminazioneCaratteristiche" prefHeight="37.0" prefWidth="197.0" text="Eliminazione Caratteristiche" />
+      <Button fx:id="btnTracciareStato" layoutX="60.0" layoutY="320.0" mnemonicParsing="false" onAction="#tracciareStatoCaratteristiche" prefHeight="37.0" prefWidth="197.0" text="Tracciare Stato Caratteristiche" />
+   </children>
+</AnchorPane>

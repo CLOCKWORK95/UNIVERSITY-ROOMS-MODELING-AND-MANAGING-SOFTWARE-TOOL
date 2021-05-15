@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.LoginController">
+   <children>
+      <Label fx:id="lblWelcome" layoutX="53.0" layoutY="26.0" prefHeight="35.0" prefWidth="224.0" text="Welcome" textFill="#1634a1">
+         <font>
+            <Font name="System Italic" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLogin" layoutX="376.0" layoutY="53.0" prefHeight="50.0" prefWidth="173.0" text="Login" textFill="#5147e1">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="344.0" layoutY="147.0" prefHeight="35.0" prefWidth="208.0" text="Gianmarco" />
+      <PasswordField fx:id="txtPassword" layoutX="344.0" layoutY="219.0" prefHeight="35.0" prefWidth="208.0" text="Bencivenni" />
+      <Button fx:id="btnLogin" layoutX="395.0" layoutY="325.0" mnemonicParsing="false" onAction="#Login" prefHeight="35.0" prefWidth="106.0" text="Login" textFill="#1f61b2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSignIn" layoutX="71.0" layoutY="202.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="35.0" prefWidth="94.0" text="Sign In" textFill="#3a4ee1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

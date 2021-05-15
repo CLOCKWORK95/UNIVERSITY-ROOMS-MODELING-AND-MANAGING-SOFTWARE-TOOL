@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.tracciareStato_StanzaController">
+   <children>
+      <Button fx:id="btnBack" layoutX="730.0" layoutY="41.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="81.0" text="Back" />
+      <Label fx:id="lblTracciareStatoCaratteristiche" layoutX="46.0" layoutY="41.0" prefHeight="30.0" prefWidth="257.0" text="Tracciare Stato Caratteristiche" textFill="#2b1dc9">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_FOR" layoutX="252.0" layoutY="163.0" prefHeight="200.0" prefWidth="376.0">
+         <columns>
+            <TableColumn fx:id="table_FORColumn1" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="table_FORColumn2" prefWidth="75.0" text="Descrizione" />
+            <TableColumn fx:id="table_FORColumn3" prefWidth="75.0" text="N°" />
+            <TableColumn fx:id="table_FORColumn4" prefWidth="75.0" text="N° Guasti" />
+            <TableColumn fx:id="table_FORColumn5" prefWidth="75.0" text="CC" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtnumberOfInstancesDAMAGE" layoutX="183.0" layoutY="573.0" prefHeight="25.0" prefWidth="68.0" />
+      <TextField fx:id="txtnumberOfInstancesREPAIR" layoutX="639.0" layoutY="573.0" prefHeight="25.0" prefWidth="68.0" />
+      <Button fx:id="btnplus" layoutX="200.0" layoutY="644.0" mnemonicParsing="false" onAction="#addDamages" prefHeight="20.0" prefWidth="35.0" text="+">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnViewFOR" layoutX="607.0" layoutY="124.0" mnemonicParsing="false" onAction="#printFOROnTable_FOR" text="View" />
+      <Label fx:id="lblnumberOfInstancesREPAIR" layoutX="112.0" layoutY="576.0" text="N°">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblnumberOfInstancesDAMAGE" layoutX="542.0" layoutY="576.0" text="N°">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblone" layoutX="62.0" layoutY="501.0" text="Incrementa il numero di Guasti della Caratteristica ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbltwo" layoutX="516.0" layoutY="501.0" text="Decrementa il numero di Guasti della Caratteristica">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblViewRoom" layoutX="318.0" layoutY="126.0" text="Visualizza le Caratteristiche della Stanza">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnminus" layoutX="656.0" layoutY="644.0" mnemonicParsing="false" onAction="#repairDamages" prefHeight="20.0" prefWidth="35.0" text="-">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="414.0" layoutY="726.0" mnemonicParsing="false" onAction="#Fine" text="Fine" />
+   </children>
+</AnchorPane>
