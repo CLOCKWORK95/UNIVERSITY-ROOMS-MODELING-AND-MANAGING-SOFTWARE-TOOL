@@ -2,7 +2,7 @@
 
 L’architettura del software è basata sul pattern architetturale BCE (Boundary-Control-Entity), 
 moderna evoluzione del tipico pattern architetturale MVC. Secondo BCE è opportuno mantenere 
-strettamente separati blocchi di software destinati a funzionalità di Boundary (confine utentemacchina), di Controllo (corpo centrale/logica del codice), e di modellizzazione, come le entità. Questa 
+strettamente separati blocchi di software destinati a funzionalità di Boundary (confine utente-macchina), di Controllo (corpo centrale/logica del codice), e di modellizzazione, come le entità. Questa 
 separazione netta è cruciale, e la comunicazione tra le sezioni di codice avviene tramite delle classi 
 messaggere, quali i Java “Beans”. 
 L’utilità di questa architettura risiede nella estrema praticità di gestione: nel caso in questione, è stato 
